@@ -6,13 +6,8 @@ var c = -1;
     return "Error";
   }else{
     if(!isNaN(parseInt(itemToSearch))){
-      for(i=0; i<array.length; i++){
-        if(array[i]==itemToSearch){
-          c = i;
-          break;
-        }
-      }
-      if(c!=-1){ return c;}else{return false;}
+      if(array.indexOf(itemToSearch)!= -1){return array.indexOf(itemToSearch);}else{return false;}
+    
     }else{ return "Error de dato";}
 
   }
